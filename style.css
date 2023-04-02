@@ -76,7 +76,7 @@ a:hover {
 }
 
 .modal-container {
-  padding: 2% 5%; 
+  padding: 2% 5% 12% 5%; 
 }
 
 .modal h2 {
@@ -134,6 +134,10 @@ footer p {
 
   h2 {
     font-size: 125%;
+  }
+
+  .modal-container {
+    padding-bottom: 20%;
   }
 }
 
