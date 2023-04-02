@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Ryan LaCasse">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ryan LaCasse</title>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="manifest" href="/icons/site.webmanifest">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#000000">
+    <link rel="shortcut icon" href="/icons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-config" content="/icons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="https://use.typekit.net/vdg0klf.css">
+  </head>
+
+  <body>
+    <!-- Main site content -->
+    <div id="main">
+      <p>Hi! I'm Ryan, a computer science student at the University of California, Irvine. I've worked for Amazon, startup Grasshopperfund, and the United States Navy to develop cutting-edge software and web services to help others achieve their best work.</p>
+      <p>I've also studied Shakespeare in London, kayaked through the Alaskan wilderness, gone dog sledding in Minnesota, and arguably spent far too much time playing board games. I also do a little photography on the side.</p>
+
+      <h2>SELECTED WORK</h2>
+      <ul>
+        <li><a onclick="document.getElementById('amazon').style.display='block'; document.getElementById('main').style.display='none'">Amazon</a></li>
+        <li><a onclick="document.getElementById('ghf').style.display='block'; document.getElementById('main').style.display='none'">Grasshopperfund</a></li>
+        <li><a onclick="document.getElementById('navy').style.display='block'; document.getElementById('main').style.display='none'">Naval Sea Systems Command</a></li>
+      </ul>
+
+      <h2>CONNECT</h2>
+      <ul>
+        <li><a href="https://www.instagram.com/the_lacasse/" target="_blank">Instagram</a></li>
+        <li><a href="https://www.linkedin.com/in/ryan-lacasse/" target="_blank">LinkedIn</a></li>
+      </ul>
+    </div>
+
+    <!-- Selected works modals -->
+    <div class="modal" id="amazon">
+      <div class="modal-container">
+        <a onclick="document.getElementById('amazon').style.display='none'; document.getElementById('main').style.display='block'"
+          class="button">&lt; Back</a>
+        <h1>Amazon</h1>
+        <h2>June 2022 - September 2022</h2>
+        <p>Collaborated with project stakeholders to determine requirements for a new Amazon Live internal tool</p>
+        <p>Evaluated software design tradeoffs and developed full-stack web app using React, AWS, and Java</p>
+      </div>
+    </div>
+    <div class="modal" id="ghf">
+      <div class="modal-container">
+        <a onclick="document.getElementById('ghf').style.display='none'; document.getElementById('main').style.display='block'"
+          class="button">&lt; Back</a>
+        <h1>Frontend Lead @ Grasshopperfund</h1>
+        <h2>August 2021 - June 2022</h2>
+        <p>Oversaw all branding, design, and frontend implementation on Grasshopperfund's web platform</p>
+        <p>Trained and led two groups of master's students in developing site features using Agile methodologies</p>
+        
+        <h1>Frontend Developer @ Grasshopperfund</h1>
+        <h2>January 2021 - August 2021</h2>
+        <p>Created branding, style guides, and page mockups for the launch of new web platform</p>
+        <p>Used React and RESTful APIs to implement site interface and communicate with backend database</p>
+      </div>
+    </div>
+    <div class="modal" id="navy">
+      <div class="modal-container">
+        <a onclick="document.getElementById('navy').style.display='none'; document.getElementById('main').style.display='block'"
+          class="button">&lt; Back</a>
+        <h1>Naval Sea Systems Command</h1>
+        <h2>June 2021 - August 2021</h2>
+        <ul>
+          <li><p>Collaborated in a self-managed team of interns to research beneficial VR uses for the USMC</p></li>
+          <li><p>Developed a prototype VR weapons handling training simulation using C#, Blender, and Unity</p></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Site footer -->
+    <footer>
+      <p>RYAN LACASSE, 2023</p>
+    </footer>
+
+  </body>
+</html>

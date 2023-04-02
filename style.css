@@ -1,0 +1,153 @@
+body {
+  margin: 0px auto;
+  width: 90vw;
+  max-width: 1680px;
+}
+
+p, h1 {
+  font-size: 450%;
+  font-family: 'tenon', sans-serif;
+  font-weight: 300;
+  text-align: justify;
+  color: #111;
+}
+
+h1 {
+  margin-top: 80px;
+  margin-bottom: 0px;
+  text-align: left;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 60px;
+}
+
+a {
+  font-size: 450%;
+  font-family: 'tenon', sans-serif;
+  font-weight: 300;
+  line-height: 90%;
+}
+
+#small {
+  font-size: 150%;
+  text-decoration-thickness: 2px;
+}
+
+h2 {
+  font-size: 150%;
+  font-family: 'tenon', sans-serif;
+  font-weight: 300;
+  text-align: justify;
+  color: #111;
+  margin-bottom: 0px;
+}
+
+li {
+  margin-top: 1em;
+}
+
+a {
+  color: #686060;
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+  transition: color .2s;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #111;
+}
+
+/* Modal */
+.modal {
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 1;
+  display: none;
+  background-color: #fff;
+  height: 100vh;
+  overflow: scroll;
+  max-width: 1680px;
+}
+
+.modal-container {
+  padding: 2% 5%; 
+}
+
+.modal h2 {
+  margin-top: 0px;
+}
+
+.modal p {
+  margin: 3% 0%;
+}
+
+/* Footer */
+footer {
+  margin-top: 128px;
+}
+
+footer p {
+  font-size: 150%;
+  text-align: right;
+}
+
+/* Display Size: Large */
+@media only screen and (max-width: 1679px) {
+  p {
+    text-align: left;
+  }
+}
+
+/* Display Size: Medium */
+@media only screen and (max-width: 1200px) {
+  p, a, h1 {
+    font-size: 400%;
+  }
+
+  .modal p {
+    margin: 7% 0%;
+  }
+}
+
+/* Display Size: Small */
+@media only screen and (max-width: 600px) {
+  p, a, h1 {
+    font-size: 300%;
+  }
+}
+
+/* Display Size: X-Small */
+@media only screen and (max-width: 400px) {
+  p, a, h1 {
+    font-size: 210%;
+  }
+
+  a {
+    text-decoration-thickness: 3px;
+  }
+
+  h2 {
+    font-size: 125%;
+  }
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+  body, .modal {
+      background: black;
+  }
+
+  p, h1 {
+    color: #aaa;
+  }
+
+  h2, a:hover {
+    color: #bbb;
+  }
+}
